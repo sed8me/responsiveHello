@@ -1,0 +1,80 @@
+body {
+	background-color: #eeeeee;
+	font-family: Segoe UI, Trebuchet MS, Lucida Grande, Arial, Helvetica, sans-serif;
+	}
+
+.wrapper {
+	width:960px;
+	margin-left:auto;
+	margin-right:auto;
+	}
+	
+.header  {
+	height:300px;
+	background-image: url('http://www.wired.com/design/wp-content/uploads/2013/09/klimas-11-660x4971.png');
+	background-repeat: no-repeat;
+	background-position: top;
+	}
+
+.menu, .menu >ul >li, .menu >ul >li >a  {
+	display: inline-block;
+	*display:inline /* for ie */
+	list-style-type:none;
+	padding: 3px;
+	}
+	
+.menu >ul >li, .menu >ul >li >a {
+	background-color: gray;
+	margin: 1px;
+	}
+	
+.footer, .footer >ul >li, .footer >ul >li >a {
+	display:inline-block;
+	*display:inline; /* for ie */
+	list-style-type:none;
+	}
+	
+@media only screen and (max-width: 480px) {
+	/* styles for narrow screens */
+	body {
+		font-size: 24pt;
+	}
+	
+	img {
+		max-width:100%;
+		height:auto;
+		}
+	
+	.wrapper {
+		width:100%;
+		
+		}
+	
+	.header  {
+		max-width:100%;
+		width:auto; /* for ie8 */
+		height:auto;
+		background-image: url('http://www.wired.com/design/wp-content/uploads/2013/09/klimas-11-660x4971.png');
+		background-repeat: no-repeat;
+		background-position: top;
+	}
+
+	
+	.menu, .menu >ul >li, .menu >ul >li >a {
+		display: block;
+		color: black;
+		text-decoration:none;
+		transition: background-color 200ms;
+		}
+	
+	.menu >ul >li >a:hover {
+		background-color: silver;
+		transition: background-color 200ms;
+		}
+		
+	
+	.menuitem > a {
+		display: block;
+		}
+}
+	
